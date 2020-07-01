@@ -1,6 +1,6 @@
 /*
-* picasso.js v0.24.0
-* Copyright (c) 2019 QlikTech International AB
+* picasso.js v0.24.3
+* Copyright (c) 2020 QlikTech International AB
 * Released under the MIT license.
 */
 
@@ -36185,7 +36185,7 @@ function gradienter(bucket) {
         cache[gradientHash] = gradientId;
       }
 
-      return "url('".concat(url, "#").concat(gradientId, "')");
+      return "url(".concat(url, "#").concat(gradientId, ")");
     },
     onCreate: function onCreate(state) {
       var url = '';
