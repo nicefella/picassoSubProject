@@ -37,7 +37,7 @@ export default function gradienter(bucket, hasher = hashObject) {
         cache[gradientHash] = gradientId;
       }
 
-      return `url('${url}#${gradientId}')`;
+      return `url(${url}#${gradientId})`;
     },
     onCreate(state) {
       let url = '';
